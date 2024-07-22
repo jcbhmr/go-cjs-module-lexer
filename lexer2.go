@@ -214,7 +214,7 @@ func copyLE(src []uint16, outBuf16 []uint16) {
 	}
 }
 
-//go:generate curl -fsSLO https://github.com/nodejs/cjs-module-lexer/raw/1.3.1/lib/lexer.wasm
+//go:generate go run github.com/jcbhmr/go-curl/v8/cmd/curl -LO https://github.com/nodejs/cjs-module-lexer/raw/1.3.1/lib/lexer.wasm
 //go:embed lexer.wasm
 var lexerWASM []byte
 
